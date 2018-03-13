@@ -18,7 +18,11 @@ def find_imgs(url):
     img_addrs = []
     a = html.find('img src=')
     while a != -1:
+<<<<<<< HEAD
         b = html.find('.jpg',a,a+255)
+=======
+        b = html.find('.jpg',a,a+254)
+>>>>>>> b423df7d6a2f13fa13524226b22c7d98492bab51
         if b != -1 :
             img_addrs.append(html[a+9:b+4])
         else:
